@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111511" />
+  <meta name="description" content="ATELIER NOIR — Modern tailoring. Timeless presence. Discover luxury men's formal suiting." />
+  <title>ATELIER NOIR — The Art of Being Impeccable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="loading-screen" id="loader" aria-hidden="true"><div class="loading-brand">A<span>·</span>N</div><div class="loader-line"></div><span class="loading-caption">THE ART OF TAILORING</span></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <header class="site-header" id="header">
+    <a class="logo" href="#top" aria-label="Atelier Noir home">ATELIER <span>NOIR</span><small>EST. MMXXIV</small></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#collection">THE COLLECTION</a><a href="#craft">OUR CRAFT</a><a href="#story">THE STORY</a></nav>
+    <a class="header-cta" href="#contact">BOOK A FITTING <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <div class="mobile-menu" id="mobileMenu"><a href="#collection">Collection</a><a href="#craft">Our Craft</a><a href="#story">Our Story</a><a href="#contact">Book a Fitting</a></div>
+  <main id="top">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-bg" role="img" aria-label="Elegant gentleman wearing tailored formal suiting"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-side-label">LONDON &nbsp; / &nbsp; EVERYWHERE</div>
+      <div class="hero-content container">
+        <p class="eyebrow hero-overline"><span class="line"></span> AN EXERCISE IN ELEGANCE</p>
+        <h1 id="heroTitle"><span class="hero-title-row">DRESSED</span><span class="hero-title-row hero-italic">for <em>the</em></span><span class="hero-title-row">MOMENT.</span></h1>
+        <div class="hero-bottom"><p>Exceptional tailoring for men who understand that true style never needs to announce itself.</p><a href="#collection" class="circle-link" aria-label="Explore collection"><span>EXPLORE<br>THE COLLECTION</span><b aria-hidden="true">↗</b></a></div>
+      </div>
+      <div class="hero-footer"><span>01 / 05 — THE INTRODUCTION</span><a href="#intro" class="scroll-hint">SCROLL TO DISCOVER <span class="scroll-arrow">↓</span></a><span>SPRING / SUMMER 2026</span></div>
+    </section>
+
+    <section class="intro section-pad" id="intro"><div class="container intro-grid"><div class="intro-index"><span class="index-num">01 / PHILOSOPHY</span><span class="small-cross">✳</span></div><div class="intro-content"><p class="eyebrow dark-eyebrow reveal">THE ATELIER NOIR PHILOSOPHY</p><h2 class="intro-heading reveal">True elegance<br>is <em>never</em> an accident<span class="period">.</span></h2><div class="intro-bottom"><p class="reveal">It is considered. Measured. Refined. Every line, every stitch, every detail belongs to a singular pursuit: to make the extraordinary feel effortless.</p><a class="text-link reveal" href="#craft">DISCOVER OUR APPROACH <span>↗</span></a></div></div></div></section>
+
+    <section class="collection section-pad" id="collection"><div class="container"><div class="section-head"><div><p class="eyebrow reveal">02 / THE COLLECTION</p><h2 class="display-heading reveal">The modern <em>gentleman.</em></h2></div><span class="section-head-aside reveal">A CONSIDERED WARDROBE<br>FOR EVERY OCCASION</span></div>
+      <div class="product-grid">
+        <article class="product-card product-card-large reveal"><a href="#contact" class="product-photo photo-one" aria-label="Enquire about The Midnight Suit"><span class="image-arrow" aria-hidden="true">↗</span></a><div class="product-info"><div><span class="product-index">01 — THE SIGNATURE</span><h3>The Midnight Suit</h3><p>A statement made in silence.</p></div><span class="product-label">TAILORED COLLECTION</span></div></article>
+        <article class="product-card reveal"><a href="#contact" class="product-photo photo-two" aria-label="Enquire about The Heritage Suit"><span class="image-arrow" aria-hidden="true">↗</span></a><div class="product-info"><div><span class="product-index">02 — THE CLASSIC</span><h3>The Heritage Suit</h3><p>Tradition, reimagined.</p></div><span class="product-label">TAILORED COLLECTION</span></div></article>
+        <article class="product-card reveal"><a href="#contact" class="product-photo photo-three" aria-label="Enquire about The Ivory Dinner Jacket"><span class="image-arrow" aria-hidden="true">↗</span></a><div class="product-info"><div><span class="product-index">03 — THE EVENING</span><h3>The Evening Edit</h3><p>After dark, in your element.</p></div><span class="product-label">FORMAL COLLECTION</span></div></article>
+      </div><div class="collection-bottom"><p>Made to move with you, made to be remembered.</p><a href="#contact" class="outline-button">ENQUIRE ABOUT THE COLLECTION <span>↗</span></a></div>
+    </div></section>
+
+    <section class="craft-pin" id="craft"><div class="craft-inner"><div class="craft-img craft-img-1"></div><div class="craft-img craft-img-2"></div><div class="craft-img craft-img-3"></div><div class="craft-overlay"></div><div class="craft-content"><p class="eyebrow">03 / THE ART OF CRAFT</p><div class="craft-copy"><h2>Precision <em>in</em><br><span>every detail.</span></h2><p class="craft-description">From the first chalk mark to the final stitch, excellence lives in what others overlook.</p></div><div class="craft-steps"><span class="step active">01 / THE FABRIC</span><span class="step">02 / THE CUT</span><span class="step">03 / THE FINISH</span></div></div><div class="craft-progress"><span></span></div></div></section>
+
+    <section class="manifesto section-pad" id="story"><div class="container manifesto-grid"><div class="manifesto-left"><p class="eyebrow dark-eyebrow reveal">04 / BEYOND THE GARMENT</p><h2 class="display-heading reveal">Not just<br>what you wear.<br><em>Who you are.</em></h2><p class="manifesto-description reveal">We believe the finest suits are more than clothing. They are confidence, expressed without a word. They are a ritual of becoming the man you choose to be.</p><a href="#contact" class="text-link reveal">YOUR STORY STARTS HERE <span>↗</span></a></div><div class="manifesto-visual"><div class="manifesto-image"></div><div class="manifesto-stamp">AN<br><small>EST. 2024</small></div><p>THE ART OF PRESENCE — VOL. 01</p></div></div></section>
+
+    <section class="marquee-band" aria-label="Brand motto"><div class="marquee-track" aria-hidden="true"><span>TAILORED FOR PRESENCE <i>✳</i> MADE FOR MOMENTS <i>✳</i> TAILORED FOR PRESENCE <i>✳</i> MADE FOR MOMENTS <i>✳</i></span><span>TAILORED FOR PRESENCE <i>✳</i> MADE FOR MOMENTS <i>✳</i> TAILORED FOR PRESENCE <i>✳</i> MADE FOR MOMENTS <i>✳</i></span></div></section>
+
+    <section class="contact section-pad" id="contact"><div class="container contact-grid"><div><p class="eyebrow reveal">05 / PRIVATE APPOINTMENTS</p><h2 class="contact-heading reveal">A finer fit<br>starts <em>here.</em></h2><p class="contact-desc reveal">The perfect suit begins with a conversation. Tell us how to reach you and we'll help you take the first step.</p></div><form class="contact-form reveal" id="fittingForm"><label for="fullName">YOUR NAME</label><input id="fullName" name="name" type="text" placeholder="Full name" required autocomplete="name" /><label for="email">EMAIL ADDRESS</label><input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" /><label for="interest">I'M INTERESTED IN</label><select id="interest" name="interest"><option>Private fitting</option><option>Wedding tailoring</option><option>Business formalwear</option><option>Evening collection</option></select><button type="submit" class="submit-button">REQUEST AN APPOINTMENT <span>↗</span></button><p class="form-note" id="formNote" role="status">Demo form — no details are sent or stored.</p></form></div></section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-top"><span class="footer-logo">ATELIER <em>NOIR</em></span><a href="#top">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>© 2026 ATELIER NOIR. CONCEPT BRAND.</span><span>DESIGNED FOR THE EXTRAORDINARY.</span><span>ALL RIGHTS RESERVED.</span></div></div></footer>
+</body>
+</html>
